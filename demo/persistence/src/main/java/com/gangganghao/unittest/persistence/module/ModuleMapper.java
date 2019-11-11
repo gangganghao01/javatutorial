@@ -1,4 +1,3 @@
-
 package com.gangganghao.unittest.persistence.module;
 
 import java.util.Collection;

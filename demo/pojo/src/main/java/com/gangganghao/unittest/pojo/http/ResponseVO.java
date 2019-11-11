@@ -1,4 +1,3 @@
-
 package com.gangganghao.unittest.pojo.http;
 
 /**

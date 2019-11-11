@@ -1,4 +1,3 @@
-
 package com.gangganghao.unittest.core.util;
 
 import java.math.BigDecimal;
