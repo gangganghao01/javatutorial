@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gangganghao.unittest</groupId>
+    <artifactId>demo</artifactId>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>单元测试demo</description>
+    <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>core</module>
+        <module>pojo</module>
+        <module>persistence</module>
+        <module>cov.gangganghao.com</module>
+    </modules>
+
+    <properties>
+        <jacoco.version>0.7.9</jacoco.version>
+        <java.version>1.8</java.version>
+        <source.encoding>UTF-8</source.encoding>
+        <release.version>${project.version}</release.version>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
