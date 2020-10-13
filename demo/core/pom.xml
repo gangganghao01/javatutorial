@@ -13,7 +13,7 @@
     <artifactId>core</artifactId>
 
     <properties>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <mokitio.version>2.0.2-beta</mokitio.version>
     </properties>
 
